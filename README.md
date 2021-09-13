@@ -1,4 +1,4 @@
-# Node/Express template project setup
+# Node/Express - MongoDB template project setup
 
 ## Available Scripts
 
@@ -16,13 +16,19 @@ Starts server and watches file changes with nodemon
 ## NPM packages
 
 1. [Babel](https://babeljs.io/)\
-  `npm install --save-dev @babel/core @babel/cli @babel/preset-env`
+   `npm install --save-dev @babel/core @babel/cli @babel/preset-env`
 
 2. [Nodemon](https://github.com/remy/nodemon)\
-  `npm install --save-dev nodemon`
+   `npm install --save-dev nodemon`
 
-3. [Express](https://expressjs.com/)\
-  `npm install express`
+3. [dotenv](https://github.com/motdotla/dotenv)\
+   `npm install dotenv`
 
-4. [Morgan](https://github.com/expressjs/morgan)\
-  `npm install morgan`
+4. [Express](https://expressjs.com/)\
+   `npm install express`
+
+5. [Morgan](https://github.com/expressjs/morgan)\
+   `npm install morgan`
+
+6. [MongoDB Driver](https://docs.mongodb.com/drivers/node/current/)\
+   `npm install mongodb`
