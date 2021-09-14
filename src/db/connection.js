@@ -9,7 +9,7 @@ export const db = {
 
     this._dbClient = await client.connect();
   },
-  getConnection: function () {
+  getDb: function () {
     if (!this._dbClient) {
       console.log('You need to call .connect() first!');
       process.exit(1);
