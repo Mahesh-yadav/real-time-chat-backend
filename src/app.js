@@ -2,6 +2,8 @@ import express from 'express';
 import morgan from 'morgan';
 import * as firebase from 'firebase-admin';
 import firebaseCredentials from '../firebase-credentials.json';
+import usersRouter from './routes/usersRouter';
+import conversationsRouter from './routes/conversationsRotuer';
 
 firebase.initializeApp({
   credential: firebase.credential.cert(firebaseCredentials),
@@ -15,8 +17,8 @@ app.use(morgan('dev'));
 // JSON req body parser middleware
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello!');
-});
+// Mount routers
+app.use('/users', usersRouter);
+app.use('/conversations', conversationsRouter);
 
 export default app;
